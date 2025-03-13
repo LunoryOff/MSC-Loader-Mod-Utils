@@ -16,4 +16,4 @@
   - `GetObject()`: Retrieve an object from the pool.
   - `ReturnObject()`: Return an object to the pool.
 
-[View full examples](ExampleMod/)
+[View full examples](ExampleMod/UtilsExample.cs)
