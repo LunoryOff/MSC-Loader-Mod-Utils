@@ -19,5 +19,8 @@ ConsoleTools.LogSuccess("Hello, MSC!");
 
 // Create a reactive integer
 ReactiveValue<int> health = new ReactiveValue<int>();
-health.ValueChanged += (val) => Console.Log($"Health: {val}");
+health.ValueChanged += (val) => ConsoleTools.Log($"Health: {val}");
 health.Value = 100;
+``
+
+[View full documentation](Documentation.md)
