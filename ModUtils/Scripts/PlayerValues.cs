@@ -4,7 +4,7 @@ namespace ModUtils
 {
     public class PlayerValues
     {
-        private static readonly string[] Values = new string[23]
+        private static readonly string[] Values = new string[29]
         {
             // float
             "PlayerStress",
@@ -32,7 +32,13 @@ namespace ModUtils
             "GUIgear",
             // bool
             "PlayerStop",
-            "PlayerSeated"
+            "PlayerSeated",
+            "GUIdrive",
+            "GUIpassenger",
+            "GUIuse",
+            "GUIbuy",
+            "GUIassemble",
+            "GUIdisassemble"
         };
 
         public static float Stress
@@ -171,6 +177,41 @@ namespace ModUtils
         {
             get => Framework_Bool(Values[22]).Value;
             set => Framework_Bool(Values[22]).Value = value;
+        }
+        public static bool GUIdrive
+        {
+            get => Framework_Bool(Values[23]).Value;
+            set => Framework_Bool(Values[23]).Value = value;
+        }
+
+        public static bool GUIPassenger
+        {
+            get => Framework_Bool(Values[24]).Value;
+            set => Framework_Bool(Values[24]).Value = value;
+        }
+
+        public static bool GUIUse
+        {
+            get => Framework_Bool(Values[25]).Value;
+            set => Framework_Bool(Values[25]).Value = value;
+        }
+
+        public static bool GUIBuy
+        {
+            get => Framework_Bool(Values[27]).Value;
+            set => Framework_Bool(Values[27]).Value = value;
+        }
+
+        public static bool GUIAssemble
+        {
+            get => Framework_Bool(Values[28]).Value;
+            set => Framework_Bool(Values[28]).Value = value;
+        }
+
+        public static bool GUIDisassemble
+        {
+            get => Framework_Bool(Values[29]).Value;
+            set => Framework_Bool(Values[29]).Value = value;
         }
 
         private static FsmInt Framework_Int(string str) => FsmVariables.GlobalVariables.FindFsmInt(str);
