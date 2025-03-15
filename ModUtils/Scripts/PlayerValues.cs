@@ -2,7 +2,7 @@ using HutongGames.PlayMaker;
 
 namespace ModUtils
 {
-    public static class PlayerValues
+    public class PlayerValues
     {
         private static readonly string[] Values = new string[23]
         {
