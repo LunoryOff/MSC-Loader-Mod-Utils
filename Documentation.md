@@ -25,17 +25,19 @@
   - `Thirst`: Changes player's thirst.
   - `DrunkEffect`: Changes player's drunk level.
   - `Money`: Changes player's money.
-
-  ## `GUIStates`
-- **Description**: Simplification of interction with GUI states.
-- **Variables**:
-  - `Use`: Adds "Use" interaction to object.
-  - `Assemble`: Adds "Assemble" interaction to object.
-  - `Disassemble`: Adds "Disassemble" interaction to object.
-  - `Buy`: Adds "Buy" interaction to object.
-  - `Drive`: Adds "Drive" interaction to object.
-  - `PassengerSeat`: Adds "Passenger Seat" to the object.
-  - `InteractionText`: Adds "Interaction Text" to the object.
-  - `SubtitleText`: Adds "Subtitle Text" to the object.
+  - `Urine`: Changes player's urine.
+  - `Dirtiness`: Changes player's dirtiness.
+  - `Weight`: Changes player's weight.
+  - `KeyFerndale': Changes whether the player has a key to Ferndale.
+  - `KeyGifu': Changes whether the player has a key to Gifu.
+  - `KeyHome': Changes whether the player has a key to Home.
+  - `KeySatsuma': Changes whether the player has a key to Satsuma.
+  - `KeyRuscko': Changes whether the player has a key to Ruscko.
+  - `CurrentVehicle`: Changes player's CurrentVehicle name.
+  - `GUIinteraction`: Changes GUI Interaction.
+  - `GUIsubtitle`: Changes GUI Subtitle.
+  - `GUIGear`: Changes GUI Gear.
+  - `PlayerStop`: Changes player's stop.
+  - `Seat`: Changes player's is sitting or no.
 
 [View full examples](ExampleMod/UtilsExample.cs)
