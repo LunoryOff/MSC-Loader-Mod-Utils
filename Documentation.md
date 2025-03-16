@@ -39,6 +39,12 @@
   - `GUIGear`: Changes GUI Gear.
   - `PlayerStop`: Changes player's stop.
   - `Seat`: Changes player's sitting status.
+  - `GUIDrive`: A boolean value that can be changed by the visibility of the driving icon.
+  - `GUIPassenger`: A boolean value that can be changed by the visibility of the Passenger icon.
+  - `GUIUse`: A boolean value that can be changed by the visibility of the Use icon.
+  - `GUIBuy`: A boolean value that can be changed by the visibility of the Buy icon.
+  - `GUIAssemble`: A boolean value that can be changed by the visibility of the Assemble icon.
+  - `GUIDisassemble`: A boolean value that can be changed by the visibility of the Disassemble icon.
 
 ## `MoveDownInCar`
 - **Description**: This script manages the player's state when entering or exiting a vehicle. It sets a boolean variable indicating whether the player is in the car.
