@@ -1,15 +1,29 @@
-﻿using UnityEngine;
+using HutongGames.PlayMaker;
+using UnityEngine;
 
 namespace ModUtils.Drivable
 {
-    
+   
     public class MoveDownInCar : MonoBehaviour
     {
+        protected GameObject player;
+        protected FsmBool playerincarfsm;
+
+        private void Start()
+        {
+            player = GameObject.Find("PLAYER");
+            PlayMakerFSM[] fsms = player.GetComponents<PlayMakerFSM>();
+
+            if (fsms.Length > 1)
+            {
+                playerincarfsm = fsms[1].FsmVariables.FindFsmBool("PlayerInCar");
+            }
+        }
         void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.name == "PLAYER")
             {
-                other.gameObject.GetComponents<PlayMakerFSM>()[1].FsmVariables.GetFsmBool("PlayerInCar").Value = true;
+                playerincarfsm.Value = true;
             }
         }
 
@@ -17,7 +31,7 @@ namespace ModUtils.Drivable
         {
             if (other.gameObject.name == "PLAYER")
             {
-                other.gameObject.GetComponents<PlayMakerFSM>()[1].FsmVariables.GetFsmBool("PlayerInCar").Value = false;
+                playerincarfsm.Value = false;
             }
         }
     }
